@@ -1,0 +1,78 @@
+.container__search{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.custom-select__control{
+    border-radius: 15px!important;
+    background-color: transparent!important;
+    color: #fff!important;
+    
+}
+
+.custom-select__placeholder {
+    color: #fff!important;
+}
+
+.custom-select{
+    width: 30rem;
+}
+
+.custom-select__input-container{
+    color: #fff!important;
+}
+
+.custom-select__indicators{
+    display: none!important;
+}
+
+.custom-select__control--is-focused {
+    border-color: #fff!important;
+    box-shadow: 0 0 0 1px #fff!important;
+    color: #fff!important;
+  }
+
+  .custom-select__menu {
+    background-color: rgba(52, 122, 235 , 1)!important;
+    color: #fff!important;
+    z-index: 9999;
+    border: none;
+    overflow: hidden!important;
+  }
+
+  .custom-select__menu-list::-webkit-scrollbar {
+    display: none!important; /* Safari and Chrome */
+  }
+
+  .custom-select__menu-list {
+    background-color: transparent!important;
+    color: #fff!important;
+    z-index: 9999;
+    border: none!important;
+    box-shadow: none!important;
+    max-height: 300px; /* Adjust as necessary */
+    overflow-y: auto; /* Ensure scrolling still works */
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    }
+  .custom-select__option {
+    background-color: transparent!important;
+    color: #fff!important;
+    z-index: 9999;
+    border: none;
+  }
+
+  .custom-select__option--is-selected {
+    background-color: transparent!important;
+    color: #fff!important;
+    z-index: 9999;
+    border: none;
+  }
+
+  .custom-select__single-value{
+    color: #fff!important;
+  }

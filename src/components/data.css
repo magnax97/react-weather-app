@@ -1,0 +1,26 @@
+.weather__container{
+    margin-top: 4rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 50rem;
+    margin: auto;
+}
+
+  
+.forecast-card {
+    background-color: rgba(52, 125, 236 , 0.5);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    /* width: 20rem; */
+    min-height: 250px;
+  }
+  
+
+
+.forecast-card p {
+    margin: 5px 0;
+}
