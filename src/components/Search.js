@@ -1,10 +1,27 @@
 import { useState , useCallback } from 'react'
 import { AsyncPaginate } from 'react-select-async-paginate'
+import { components } from 'react-select';
+import { FaLocationArrow } from 'react-icons/fa';
 import axios from 'axios'
 import './search.css'
 
 
-const Search = ({onSelectChange}) =>{
+const Control = ({ children, ...props }) => (
+  <components.Control {...props}>
+    {children}
+    <button
+      type="button"
+      className="location-button"
+      onMouseDown={e => e.stopPropagation()} // Prevents the select from closing when clicking the button
+      onClick={props.selectProps.onUseCurrentLocation}
+    >
+      <FaLocationArrow />
+    </button>
+  </components.Control>
+);
+
+
+const Search = ({onSelectChange , onUseCurrentLocation }) =>{
 const [value , setValue] = useState(null)
 
 
@@ -63,6 +80,7 @@ const loadOptions = useCallback(async (searchQuery, loadedOptions, { page }) => 
 return(
   <div className="container__search">
     <AsyncPaginate
+        components={{Control}}
         placeholder="Search for a city"
         value={value}
         loadOptions={loadOptions}
@@ -73,6 +91,7 @@ return(
         debounceTimeout={600}
         className="custom-select"
       classNamePrefix="custom-select"
+      onUseCurrentLocation={onUseCurrentLocation}
     />
     </div>
 )

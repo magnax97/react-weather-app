@@ -76,3 +76,16 @@
   .custom-select__single-value{
     color: #fff!important;
   }
+
+  .location-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 14px;
+    z-index: 1!important;
+  }
+  
